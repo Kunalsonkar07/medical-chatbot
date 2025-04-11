@@ -19,7 +19,14 @@ def load_pdf_files(data):
     return documents
 
 documents=load_pdf_files(data=DATA_PATH)
-#print("Length of PDF pages: ", len(documents))
+#documents here represent one single page of pdf so if we have 2 pdf of 3 and 4 pages respectively len of documnet will be 7 total ;
+# for doc in documents:
+#     print(doc.metadata)
+# {
+#   'source': 'data/file1.pdf',
+#   'page': 0
+# }
+# # #print("Length of PDF pages: ", len(documents))
 
 
 # Step 2: Create Chunks
